@@ -5,7 +5,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Test {
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("spring-${username}.xml");
+//        ApplicationContext context = new ClassPathXmlApplicationContext("spring-${username}.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         System.out.println(context.getBean("person"));
 ////        MyClassPathXmlApplicationContext ac = new MyClassPathXmlApplicationContext("factoryBean.xml");
 ////        MyFactoryBean bean1 = (MyFactoryBean) ac.getBean( "&myFactoryBean");

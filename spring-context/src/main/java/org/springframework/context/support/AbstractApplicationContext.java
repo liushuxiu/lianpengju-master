@@ -612,6 +612,7 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 				// Last step: publish corresponding event.
 				// 完成刷新过程，通知生命周期处理器lifecycleProcessor刷新过程，同时发出ContextRefreshEvent通知别人
 				finishRefresh();
+				logger.info("======================spring 源码学习之路正式开始啦==========================================");
 			}
 
 			catch (BeansException ex) {
